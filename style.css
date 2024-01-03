@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::selection{
+    background-color: #000;
+    color: #fff;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    overflow: hidden;
+    position: relative;
+}
+
+.page1{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: #F0ECF9;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 11.6%;
+    width: 100%;
+    padding: 0 7%;
+}
+
+.nav>img{
+    width: 8%;
+    cursor: pointer;
+}
+
+.center-nav a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: #4F4E4E;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.center-nav a:hover{
+    color: #5e24a9;
+    font-size: 17.8px;
+    transition: .2s ease;
+}
+
+.nav>input{
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 50px;
+    padding: 0 21px;
+    width: 13%;
+    text-transform: uppercase;
+    box-shadow: 6px 5px 5px rgb(229, 224, 224);
+    color: #5e24a9;
+}
+
+#big-img{
+    position: absolute;
+    right: 5%;
+    bottom: 16%;
+    filter: contrast(105%);
+    width: 45%;
+}
+.left-text{
+    position: absolute;
+    padding: 20px 40px;
+    top: 40%;
+    scale: 1.1;
+    margin: 0 6.2%;
+}
+
+.left-text>h6{
+    color: #5e24a9;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 150;
+    margin-bottom: -2px;
+}
+
+.left-text>h1{
+    font-size: 39px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    color: #5e24a9;
+    padding: -10px 0;
+    margin-bottom: 2%;
+}
+
+.left-text p{
+    color: #767373;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.page1>button{
+    position: absolute;
+    bottom: 18%;
+    left: 7.28%;
+    background-color: #5e24a9;
+    color: #F0ECF9;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 13px 20px;
+    cursor: pointer;
+}
+
+.page1>button:hover, .desc2>button:hover, .desc3>button:hover{
+    background-color: #ffffff;
+    color: #5e24a9;
+    border: 1.8px solid #5e24a9;
+      /* transition: all; */
+      transition-duration: 280ms;
+}
+
+.page2{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(239, 230, 243);
+}
+.text2{
+    position: relative;
+}
+
+.text2>h1{
+    position: relative;
+    padding: 30px 40px;
+   font-size: 22px;
+   font-weight: 500;
+   text-align: center;
+    scale: 1.1;
+    color: #5e24a9;
+}
+
+.text2 .page2-desc1{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 7px 15px;
+    margin: 0 10%;
+    justify-content: space-between;
+}
+
+.page2-desc1> img{
+    width: 430px;
+    left: 5%;
+    transform: translateX(10%);
+}
+
+.desc2{
+    position: absolute;
+    /* background-color: red; */
+    right: 7.4%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.desc2>h2{
+    font-size: 32px;
+    color: #5e24a9;
+    margin-bottom: 20px;
+    /* margin-top: 25px; */
+}
+
+.desc2>span{
+    color: #4F4E4E;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.desc2>p{
+    font-size: 13px;
+    color: #4F4E4E;
+    margin-left: 15px;
+    line-height: 1.6;
+}
+
+.desc2>button{
+    margin-top: 25px;
+    width: 40%;
+    bottom: 18%;
+    left: 7.28%;
+    background-color: #5e24a9;
+    color: #F0ECF9;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 13px 20px;
+    cursor: pointer;
+}
+
+/* page 2 ma vako tyo 2 picture ko lagi */
+
+.text2 .page2-desc2{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 7px 15px;
+    margin: 0 8%;
+}
+
+.page2-desc2> img{
+    width: 430px;
+    position: absolute;
+    right: 11%;
+    top: 10%;
+    transform: translateX(10%);
+}
+
+.desc3{
+    left: 4.8%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    margin-left: 3vw;
+    padding: 0 30px;
+}
+
+.desc3>h2{
+    font-size: 32px;
+    color: #5e24a9;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+.desc3>span{
+    color: #4F4E4E;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.desc3>p{
+    font-size: 13px;
+    color: #4F4E4E;
+    margin-left: 15px;
+    line-height: 1.6;
+}
+
+.desc3>button{
+    margin-top: 25px;
+    width: 40%;
+    bottom: 18%;
+    left: 7.28%;
+    background-color: #5e24a9;
+    color: #F0ECF9;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 13px 20px;
+    cursor: pointer;
+} 
+
+.para-check{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 2;
+}
+
+.para-check p{
+    color: #4F4E4E;
+    font-size: 13px;
+}
+
+.para-check img{
+    width: 18px;
+    height: 18px;
+}
+
+.page3{
+    width: 100vw;
+    height: 100vh;
+    background-color: #F1E9FC;
+    position: relative;
+}
+
+.page3-text3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 18px;
+}
+
+.page3-text3 h2{
+    color: #5e24a9;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+.page3-text3 p{
+    color: #767373;
+    text-align: center;
+    font-size: 14px;
+}
+
+.boxes{
+    position: relative;
+}
+
+.boxes .symptom-card{
+    position: absolute;
+    width: 28vw;
+    height: 20vh;
+    background-color: #fff;
+    margin: 100px 13vw;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.boxes .symptom-card1{
+    position: absolute;
+    width: 28vw;
+    height: 20vh;
+    background-color: #fff;
+    margin: 100px 13vw;
+    display: flex;
+    right: 0;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.boxes .symptom-card2{
+    position: absolute;
+    width: 28vw;
+    height: 20vh;
+    background-color: #fff;
+    margin: 40vh 13vw;
+    display: flex;
+    align-items: center;
+    top: 100%;
+    gap: 20px;
+    padding: 30px; 
+    border-radius: 10px;
+}
+
+.boxes .symptom-card3{
+    position: absolute;
+    width: 28vw;
+    height: 20vh;
+    background-color: #fff;
+    margin: 40vh 13vw;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    top: 100%;
+    right: 0;
+    border-radius: 10px;
+}
+
+.symptom-card img{
+    width: 66px;
+    height: 66px;
+    filter: contrast(110%);
+}
+
+.symptom-card1 img{
+    width: 66px;
+    height: 66px;
+    filter: contrast(110%);
+}
+.symptom-card2 img{
+    width: 66px;
+    height: 66px;
+    filter: contrast(110%);
+}
+.symptom-card3 img{
+    width: 66px;
+    height: 66px;
+    filter: contrast(110%);
+}
+.description h3{
+    color: #5e24a9;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.description p{
+    color: #767373;
+    font-size: 13px;
+}
+
+.symptom-card:hover, .symptom-card1:hover, .symptom-card2:hover, .symptom-card3:hover{
+    box-shadow: 5px 5px 10px rgb(106, 105, 105);
+    transition: 0.2s all;
+}
+
+#btns{
+    position: absolute;
+    margin-top: 25px;
+    width: 8vw;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #5e24a9;
+    color: #F0ECF9;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 13px 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#btns:hover{
+    background-color: #ffffff;
+    color: #5e24a9;
+    border: 1.8px solid #5e24a9;
+    font-weight: 700;   
+}
+/* footer */
+
+footer{
+    background-color: #EFE6F3;
+}
+
+.footer{
+   display: flex;
+   padding: 50px 123px;
+   justify-content: space-evenly;
+}
+
+.footer-first h3{
+    color: #5e24a9;
+    font-weight: 900;
+    font-size: 28px;
+    cursor: pointer;
+}
+.footer li{
+    list-style: none;
+    color: grey;
+    padding: 7px 0;
+}
+
+.footer > div{
+    width: 233px;
+}
+
+footer .footer-copy{
+    text-align: center;
+    padding-bottom: 23px;
+    color: gray;
+    background-color: #EFE6F3;
+}
+
+.footer h2{
+    color: #5e24a9;
+    font-size: 21px;
+    margin: 0px -1px;
+}
+
+.footer p{
+    color: grey;
+}
+
+.social-above{
+    display: flex;
+    margin: 8px -23px;
+}
+
+.bxl-facebook:hover{
+    color: #1778F2;
+}
+.bxl-twitter:hover{
+    color: #1778F2;
+}
+
+.footer__social{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
